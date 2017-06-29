@@ -1,6 +1,8 @@
-- [url](#article_1)
-- [Take me there](#article_1)
-- Take me there
+- [Artikel 1](#article_1)
+- [Artikel 2](#article_2)
+- [Artikel 3](#article_3)
+- [Artikel 4](#article_4)
+- [Artikel 5](#article_5)
 
 # Weekly
 
@@ -62,25 +64,24 @@ Leonie wilde een aantal dingen vertellen over screen readers:
 
 # Artikelen
 
-## Hoe zet je een schaalbare proctieomgeving op voor NodeJS en MYSQL?
-[create an anchor](#article_1)
 <a name="article_1"></a>
+## Hoe zet je een schaalbare proctieomgeving op voor NodeJS en MYSQL?
 
-Hoe zet je een productie omgeving op die je echt kan gebruiken om je applicatie bezoekbaar te maken voor gebruikers? In dit artikel lees je over hoe je dit het beste kan opzetten. We gaan het voornamelijk hebben over NodeJS, Mysql, Nginx, security, OpenVPN, Ubuntu en Esxi.
+Hoe zet je een productie omgeving op die je echt kan gebruiken om je applicatie bezoek baar te maken voor gebruikers? In dit artikel lees je over hoe je dit het beste kan opzetten. We gaan het voornamelijk hebben over NodeJS, Mysql, Nginx, security, OpenVPN, Ubuntu en Esxi.
 
 Om te beginnen heb je een aantal ingrediënten nodig:
-- VPS met VPN of een hobby server
-- Esxi
-- Ubuntu
-- NodeJS & NPM
-- Mysql server
-- Nginx
-- OpenVPN op je computer
+-VPS met VPN of een hobby server
+-Esxi
+-Ubuntu
+-NodeJS & NPM
+-Mysql server
+-Nginx
+-OpenVPN op je computer
 
 Wat zijn al deze dingen?
 
 VPS & VPN (Virtual private server & virtual private network) of hobby server
-Dit is gewoon een computer waarop jou applicatie en database draaien. Het is belangrijk dat dit wel echt een server is omdat de hardware is gemaakt om langdurig mee te gaan en ook kan het langer aan blijven.
+Dit is gewoon een computer waarop jouw applicatie en database draaien. Het is belangrijk dat dit wel echt een server is omdat de hardware is gemaakt om langdurig mee te gaan en ook kan het langer aan blijven.
 
 Esxi
 Dit is het hoofdbesturing systeem wat op de server komt te draaien. Dit systeem kan andere besturingssystemen virtueel draaien. Zo kunnen we straks meerdere Linux bakken naast elkaar draaien.
@@ -105,7 +106,7 @@ Als je een VPS hebt kan je de hosting vragen over de mogelijkheden voor Esxi. Al
 Zodra je dit gedaan hebt is het belangrijk dat je dit IP adres static maakt. Dit doe je eerst in Esxi, daarna in je router.
 Op alle ubuntu servers die je nu of in de toekomst aanmaakt is het ook belangrijk dat je ze static maakt!
 
-Maak 4 virtuele Ubuntu containers aan. Het is aan te raden om de NodeJS 2GB ram te geven. De andere drie virtuele servers kunnen 1GB. Geef de NodeJS en minimaal 10 gigabite opslag en de Mysql minimaal 5GB. Download Ubuntu hier: http://releases.ubuntu.com/14.04/ 
+Maak 4 virtuele Ubuntu containers aan. Het is aan te raden om de NodeJS 2GB ram te geven. De andere drie virtuele servers kunnen 1GB. Geef de NodeJS en minimaal 10 gigabyte opslag en de Mysql minimaal 5GB. Download Ubuntu hier: http://releases.ubuntu.com/14.04/ 
 
 Installeer op de volgende 4 dingen op de op de verschillende virtuele servers:
 MYSQL Server -> https://dev.mysql.com/downloads/
@@ -120,8 +121,9 @@ Nadat je deze tutorial gevolgd hebt kan je verbinding maken met deze OpenVPN ser
 Nginx -> https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts
 Maak in de Nginx een profiel aan voor je nieuwe NodeJS server. Doe dit met behulp van deze tutorial: http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/
 
+
+<a name="article_2"></a>
 ## Coding in NodeJS
-[create an anchor](#article_2)
 
 In NodeJS worden een aantal termen gebruikt die belangrijk zijn om te begrijpen. Dit zijn NPM (Node package manager), NodeJS, app.js, modules, NPM scripts en package.json. Voordat je een Node project kan beginnen is het belangrijk om te begrijpen wat deze termen inhouden.
 
@@ -129,7 +131,7 @@ NPM
 NPM is het “systeem” waarmee je losse modules kan inladen. Deze kan je zelf maken of vinden op npmjs.com.
 
 Package.json & .gitigone
-Deze modules zet je vervolgens in je “package.json”. Naast de gebruikte module, zet je ook het versie nummer erbij. Al deze modules worden ingeladen in het mapje: “node modules”. Dit mapje zet je in de .gitignore zodat ze niet mee worden geupload naar Github. Zodra jij of iemand anders het project wilt gebruiken kan je het project clonen of kopieren (zonder de “node modules” map) en het commando “npm install” uitvoeren. Ook is het belangrijk dat je aangeeft welke NPM Modules worden gebruikt voor de applicatie, en welke voor de development omgeving. 
+Deze modules zet je vervolgens in je “package.json”. Naast de gebruikte module, zet je ook het versie nummer erbij. Al deze modules worden ingeladen in het mapje: “node modules”. Dit mapje zet je in de .gitignore zodat ze niet mee worden geüpload naar Github. Zodra jij of iemand anders het project wilt gebruiken kan je het project clonen of kopiëren (zonder de “node modules” map) en het commando “npm install” uitvoeren. Ook is het belangrijk dat je aangeeft welke NPM Modules worden gebruikt voor de applicatie, en welke voor de development omgeving. 
 
 Modules
 Deze modules kunnen echt van alles zijn. Van hele simpele functies (voor bijvoorbeeld een tijdelijke sessie aanmaken en dan verwijderen) tot complexe tijd calculatie functies (moment.js). Dit zijn modules die je gebruikt voor je applicatie. Er zijn ook modules die je kan gebruiken voor je development omgeving. Bijvoorbeeld nodemon, deze module herstart je applicatie na iedere wijziging zodat je niet continu je server opnieuw hoeft op te starten.
@@ -146,3 +148,34 @@ Hiermee kan je voordat een functie die een url opvangt andere functies laten uit
 EJS
 Embedded javascript is een view engine waarin je de HTML structuur maakt die naar de eindgebruiker gaat. Een alternatief hiervoor is bijvoorbeeld JADE of Handlebars. In de .ejs files kan je html, javascript, css en ejs typen. De ejs view engine maakt hier uiteindelijk html van en geeft dat door aan de client die de pagina opvraagt.
 
+<a name="article_3"></a>
+## Waaraan te denken bij een CMS?
+
+Een CMS. Iedereen heeft het erover. Maar wat is het eigenlijk? Een CMS is niet een soort magische oplossing om content te presenteren aan de gebruiker. Er zijn veel standaard content managementsystemen, maar eigenlijk is een CMS geen standaardoplossing omdat ieder bedrijf andere KPI’s en content heeft.
+
+Een CMS werkt pas echt efficiënt als het op maat is gemaakt of zodanig is aangepast dat het maatwerk is. Dit is vaak te doen met plugins (denk aan alle talloze Wordpress plugins) of door een programmeur in te huren. Optie 1 is het snelst maar zeker niet het best. In de oplossingen, opensource of niet, komen altijd talloze extra functionaliteiten die niet gebruikt worden, dingen moeilijker en slomer maken en niet veilig zijn. Als je een CMS schrijft is het belangrijk om stil te staan bij de basis van het gebruik.
+
+Voordat je aan een CMS begint is het altijd belangrijk om na te denken over de schillende doelen die de gebruikers hebben. Zo heb je minimaal admins, ingelogde gebruikers en gasten. Al deze gebruikers moeten andere functionaliteiten krijgen. Denk maar eens aan een menu. Ook is het belangrijk om uit te schrijven wat voor data je nodig hebt. Dan praat ik niet over wat objectjes maar over het ERD-schema. Hoe beter dit in elkaar steekt, hoe meer profijt je er later van hebt. Denk aan hoe makkelijk het is om later dingen toe te voegen en de relaties. Het is later vaak bijna onmogelijk om benamingen te veranderen of te verwijderen.
+
+Wat ook vaak vergeten wordt is het feit dat niet alle user alle functionaliteiten mogen gebruiken. Als een gebruiker geen formulier heeft om een pagina aan te maken, betekend dit niet dat hij geen post request kan nabootsen waarmee hij een pagina aanmaakt. Het is niet alleen belangrijk dat permissies worden gecheckt aan de render kant, maar nog veel belangrijk aan de kant waar de functionaliteit wordt uitgevoerd. Er bestaan tools waarmee alle responses van een website mee uitgelezen kunnen worden. Als een kwaadwillige dit bemachtigt kan hij door url’s browsen en veel schade aanrichten.
+
+Als je een CMS maakt is het handig om te beginnen met de CMS kant. Op basis van de content die erin wordt gestopt kan je nadenken over hoe de front-view opgebouwd moet worden. In de CMS kan je ook beter gelijk rekening houden met de permissies (wie mag wat zien, bewerken, aanmaken, editen), loginsysteem en het user management. In de praktijk blijkt vaak dat het moeilijk is om dit later in te bouwen. Daarnaast is de kans op fouten groter als dit er later omheen gebouwd wordt. Security fist!
+
+Blijf consistent en houd een documentatie zodat andere mensen het ook kunnen onderhouden. Kijk ook naar andere CMS structuren. Hierdoor wordt het makkelijker om te begrijpen wat je hebt gemaakt voor anderen. “Don't pave the cowpath”.
+
+Als laatste is het goed om je volledig op de gebruiker van het CMS te richten. Bekijk of je zoveel mogelijk wizards kan opdelen in kleine stukken of kan afvangen met logische flows. Houd de terminologie ook simpel en consistent. Let ook op de toegankelijkheid van het CMS. Is het toegankelijk voor slechtziende of bijvoorbeeld via mobiel?
+
+<a name="article_4"></a>
+## Accessibility
+
+Hoe maak je iets toegankelijk voor het web? Er zijn talloze voorbeelden van hoe het niet moet. Het is in ieder geval belangrijk om een goede html structuur te hebben. Zorg dat je valide html schrijft en gebruik maakt van de juiste html elementen. Voor toegankelijkheid het vooral belangrijk dat je html semantisch goed is opgebouwd. Het is dan ook handig om je html altijd even door een html validatie systeem heen te halen. Die van het W3C is goed aan te bevelen. https://validator.w3.org/
+
+Geef consistente benamingen aan afbeeldingen en links. Blinden kunnen niet zien wat een afbeelding is of in wat voor context een link is geplaatst. Daarom is het belangrijk dat deze elementen goede beschrijvingen hebben. En bij een link waar ze heen verwijzen. Dit doe je met de “alt” tag. Mocht je een cms gebruiken waar je niet alles in vult, is het nog belangrijker om hier rekening mee te houden. Zo zou een alt tag bij een image verplicht moeten zijn zodat jou content creators hier geen fouten in kunnen maken. Dan dwingt het systeem af dat de uiteindelijke front-view de juiste informatie voor screenreaders bevat.
+
+Zorg voor slechtziende dat het contrast goed is. Dit is niet alleen voor slechtziende, wat als iemand bijvoorbeeld op een telefoon kijkt in de zon? Dan is het belangrijk dat het contrast goed is. Er zijn programma’s waarmee je kan uittesten of het contrast ook echt daadwerkelijk goed is. Toch kunnen deze het ook mis hebben! Test het altijd zelf even door met je telefoon of laptop in de zon te gaan staan, of knijp je ogen dicht en kijk of je contrast ziet.
+
+Zorg dat knoppen goed groot zijn en goede states hebben. Vooral op mobiel is dit erg belangrijk. Ook is het goed om na te denken over waar knoppen komen op wat voor device. Als je bijvoorbeeld een touch table hebt waarbij de gebruiker aan de onderkant van het scherm staat, zou het vervelend zijn als de navigatieknoppen helemaal bovenaan de pagina staan. De states van de knoppen zijn ook erg belangrijk. Dit in combinatie met de affordance uiteraard. Is het klikbaar? Wat gaat er gebeuren als ik erop klik? Of geeft het systeem of website al een feedback over welke kant de pagina op gaat bewegen? Wat nog belangrijker is, is de focus state. Mensen die alleen met het toetenbord navigeren kunnen welke knop ze gaan gebruiken.
+
+Zorg voor progressive enhancement. Javascript is erg krachtig, maar dat brengt ook zijn valkuilen mee. Als de verbinding slecht is, het device verouderd is, het device geen javascript kan uitvoeren of als javascript uit staat kan het zijn dat javascript niet goed functioneert. In dit geval is het belangrijk dat de fallbacks goed zijn. Als je met javascript een div klik baar maakt kan de gebruiker niks op het moment dat javascript niet goed werkt!
+
+Zorg dat je webpagina’s en ontwerpen toegankelijker worden voor het hele web door de hierboven genoemde onderdelen minimaal toe te passen in al je websites en apps!
