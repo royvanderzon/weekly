@@ -179,3 +179,22 @@ Zorg dat knoppen goed groot zijn en goede states hebben. Vooral op mobiel is dit
 Zorg voor progressive enhancement. Javascript is erg krachtig, maar dat brengt ook zijn valkuilen mee. Als de verbinding slecht is, het device verouderd is, het device geen javascript kan uitvoeren of als javascript uit staat kan het zijn dat javascript niet goed functioneert. In dit geval is het belangrijk dat de fallbacks goed zijn. Als je met javascript een div klik baar maakt kan de gebruiker niks op het moment dat javascript niet goed werkt!
 
 Zorg dat je webpagina’s en ontwerpen toegankelijker worden voor het hele web door de hierboven genoemde onderdelen minimaal toe te passen in al je websites en apps!
+
+<a name="article_5"></a>
+## Ethische data verzameling
+
+Big data. Wat is dat? Kunnen we het meten? Hoeveel is het en hoeveel hebben we? Misschien een belangrijkere vraag, wie beheert het en wat kan hij ermee?
+
+De belastingdienst hield rond in 2013 een vrouw aan op verdenking van belastingfraude, zei kreeg een uitkering maar kocht te veel excellent biefstuk met haar Albert Heijn bonus pas. Haar uitkering is uiteindelijk stop gezet. (Panopticon privacy - Peter Vlemmix 29:05)
+
+Het is rechtvaardig dat de uitkering van deze vrouw is stopgezet. Maar was het niveau waarop deze vrouw onderzocht is de moeite waard? De oneindige datastroom die wij creëren door te leven wordt opgeslagen en kan op ieder gewenst moment worden gebruikt voor alle denkbare scenario’s.
+
+Het klinkt alsof dit onderwerp ver verwijderd ligt van het onderwerp websites. Toch ligt het dichterbij dan je denkt. Websites zijn zoveel meer dan alleen een informatiebron. Met de talloze inlogsystemen, profielen, reclames, javascripts en databases wordt de mensheid gemonitord! Maar wat is ethisch om op te slaan of om verbanden mee te trekken? Door het gebruik van persuasive design zijn wij in staat gebruikers opdrachten te laten uitvoeren en te sturen in gedrag. Daarmee komt ook een grote verantwoordelijkheid. Designers en programmeurs zouden zo moeten programmeren en designen dat de veiligheid en privacy van de eindgebruikers gewaarborgd ligt.
+
+Als je het hebt over performance, progressive enhancement, toegankelijkheid, tooling, etc. dan heb je het over websites en web apps. Maar waarom vergeten wij privacy altijd? Privacy en etnisch design zou op plek een moeten staan in deze lijst.
+
+Met de komst van IoT wordt dit straks complexer. Onlinedata leeft straks niet alleen maar in onze computers, telefoons en smartwatches... Onlinedata leeft straks in onze koelkast, onze wekker, onze stofzuiger, onze auto en noem het maar op! Tegengaan kunnen we niet, en we moeten het ook zeker niet tegenhouden. Het is belangrijk dat wij ons er bewust van worden en veiligheden in bouwen om integriteit te waarborgen.
+
+Hoe ver moeten wij gaan?
+
+Ver. Als wij iets ethisch onverantwoord zouden moeten bouwen zouden we stop moeten zeggen en advies geven hoe het wel moet. Neem bijvoorbeeld een restaurant die graag hogere ratings wilt hebben en in het formulier standaard alle keuzes al invult op vier van de vijf sterren. Dan zouden wij stop moeten zeggen en uitleggen dat dit moet gaan over de kwaliteit van het eten en de service. Een voorbeeld over privacy: Als je op Bol.com een product bekijkt en vervolgens de website sluit, krijg je een paar dagen later een mail of je nog steeds geïnteresseerd bent in de bezochte producten. Dit onder het mom van: “Misschien ben je er nog wel in geïnteresseerd?” Het lijkt niet erg, maar waar trekken we de grens met hoever wij de gebruiker moeten volgens en data moeten verzamen om vervolgens verbanden mee te trekken?
