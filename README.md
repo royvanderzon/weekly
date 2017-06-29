@@ -16,7 +16,7 @@
 - [Artikel 2](#article_2)
 - [Artikel 3](#article_3)
 - [Artikel 4](#article_4)
-- [Artikel 5](#article_5)
+- [Artikel 5](#article_5) (MUST READ!)
 
 # Weekly
 
