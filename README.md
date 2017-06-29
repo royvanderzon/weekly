@@ -210,7 +210,7 @@ Zorg dat je webpagina’s en ontwerpen toegankelijker worden voor het hele web d
 
 Big data. Wat is dat? Kunnen we het meten? Hoeveel is het en hoeveel hebben we? Misschien een belangrijkere vraag, wie beheert het en wat kan hij ermee?
 
-De belastingdienst hield rond in 2013 een vrouw aan op verdenking van belastingfraude, zei kreeg een uitkering maar kocht te veel excellent biefstuk met haar Albert Heijn bonus pas. Haar uitkering is uiteindelijk stop gezet. (Panopticon privacy - Peter Vlemmix 29:05)
+_De belastingdienst hield rond in 2013 een vrouw aan op verdenking van belastingfraude, zei kreeg een uitkering maar kocht te veel excellent biefstuk met haar Albert Heijn bonus pas. Haar uitkering is uiteindelijk stop gezet. (Panopticon privacy - Peter Vlemmix 29:05)_
 
 Het is rechtvaardig dat de uitkering van deze vrouw is stopgezet. Maar was het niveau waarop deze vrouw onderzocht is de moeite waard? De oneindige datastroom die wij creëren door te leven wordt opgeslagen en kan op ieder gewenst moment worden gebruikt voor alle denkbare scenario’s.
 
