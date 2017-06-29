@@ -135,15 +135,19 @@ Maak 4 virtuele Ubuntu containers aan. Het is aan te raden om de NodeJS 2GB ram 
 
 Installeer op de volgende 4 dingen op de op de verschillende virtuele servers:
 __MYSQL Server__ -> https://dev.mysql.com/downloads/
+
 Dit is je database server. Voor je software installeert voer altijd eerst apt-update uit. Met ifconfig kan je bekijken welk ip adres deze server heeft.
 
 __NODEJS & NPM__ -> https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server
+
 Het is aan te raden om eerst NVM te installeren op de server. Dit zodat je altijd kan switchen tussen verschillende node versies. Start je Node server vanuit /var/www. Zodra je hier een test applicatie in draait kan je deze bereiken via het IP adres van de server gevold door de port die je hebt opgegeven in de app.js (bijvoorbeeld 192.168.0.4:3000). Als je verbinding wilt maken met de database server bekijk je op de MYSQL server wat het IP adres is. Vergeet niet dat daar nog een poort achter moet die staat ingesteld op je MYSQL server. Het is aan te raden om je Node applicatie levend te houden met PM2. Hiermee kan je logs terug kijken en van een afstand je server status monitoren. Ook kan je instellen dat je error logs gemaild krijgt als je server een error krijgt. PM2 houd je app aan. Als hij uitvalt start hij opnieuw op. Lees hier hoe je PM2 installeert: https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps
 
 __OpenVPN__ -> https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04
+
 Nadat je deze tutorial gevolgd hebt kan je verbinding maken met deze OpenVPN server. Vervolgens kan je vanaf buitenaf inloggen en ssh’en naar de andere virtuale servers en de Esxi zelf.
 
 __Nginx__ -> https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts
+
 Maak in de Nginx een profiel aan voor je nieuwe NodeJS server. Doe dit met behulp van deze tutorial: http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/
 
 
