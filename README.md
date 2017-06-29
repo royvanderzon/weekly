@@ -103,27 +103,27 @@ Om te beginnen heb je een aantal ingrediënten nodig:
 -Nginx
 -OpenVPN op je computer
 
-Wat zijn al deze dingen?
+### Wat zijn al deze dingen?
 
 VPS & VPN (Virtual private server & virtual private network) of hobby server
 Dit is gewoon een computer waarop jouw applicatie en database draaien. Het is belangrijk dat dit wel echt een server is omdat de hardware is gemaakt om langdurig mee te gaan en ook kan het langer aan blijven.
 
-Esxi
+### Esxi
 Dit is het hoofdbesturing systeem wat op de server komt te draaien. Dit systeem kan andere besturingssystemen virtueel draaien. Zo kunnen we straks meerdere Linux bakken naast elkaar draaien.
 
-Ubuntu
+### Ubuntu
 Ubuntu is het besturingen systeem wat we virtueel gaan draaien in Esxi. Voor onze eerste opstelling gaan we vier virtuele containers maken met Ubuntu erin.
 
-NodeJS & NPM
+### NodeJS & NPM
 NodeJS is de taal en het systeem waarin de Node applicatie gaat leven. NPM is de Node Package Manager waarmee NPM packages geïnstalleerd kunnen worden.
 
-Mysql
+### Mysql
 Mysql server is de database software. Deze kan je straks bereiken met een programma zoals Mysql Workbench.
 
-Nginx
+### Nginx
 Dit is de proxy software. De proxy software praat straks met de buitenwereld en met de losse node Servers.
 
-OpenVPN
+### OpenVPN
 Hiermee kan je straks verbinden maken. Deze server verschaft jou straks toegang tot alle andere servers als je mobiel wilt werken (buiten het netwerk waarin de server staat).
 Laten we beginnen!
 
@@ -134,16 +134,16 @@ Op alle ubuntu servers die je nu of in de toekomst aanmaakt is het ook belangrij
 Maak 4 virtuele Ubuntu containers aan. Het is aan te raden om de NodeJS 2GB ram te geven. De andere drie virtuele servers kunnen 1GB. Geef de NodeJS en minimaal 10 gigabyte opslag en de Mysql minimaal 5GB. Download Ubuntu hier: http://releases.ubuntu.com/14.04/ 
 
 Installeer op de volgende 4 dingen op de op de verschillende virtuele servers:
-MYSQL Server -> https://dev.mysql.com/downloads/
+__MYSQL Server__ -> https://dev.mysql.com/downloads/
 Dit is je database server. Voor je software installeert voer altijd eerst apt-update uit. Met ifconfig kan je bekijken welk ip adres deze server heeft.
 
-NODEJS & NPM -> https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server
+__NODEJS & NPM__ -> https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server
 Het is aan te raden om eerst NVM te installeren op de server. Dit zodat je altijd kan switchen tussen verschillende node versies. Start je Node server vanuit /var/www. Zodra je hier een test applicatie in draait kan je deze bereiken via het IP adres van de server gevold door de port die je hebt opgegeven in de app.js (bijvoorbeeld 192.168.0.4:3000). Als je verbinding wilt maken met de database server bekijk je op de MYSQL server wat het IP adres is. Vergeet niet dat daar nog een poort achter moet die staat ingesteld op je MYSQL server. Het is aan te raden om je Node applicatie levend te houden met PM2. Hiermee kan je logs terug kijken en van een afstand je server status monitoren. Ook kan je instellen dat je error logs gemaild krijgt als je server een error krijgt. PM2 houd je app aan. Als hij uitvalt start hij opnieuw op. Lees hier hoe je PM2 installeert: https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps
 
-OpenVPN -> https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04
+__OpenVPN__ -> https://www.digitalocean.com/community/tutorials/how-to-set-up-an-openvpn-server-on-ubuntu-14-04
 Nadat je deze tutorial gevolgd hebt kan je verbinding maken met deze OpenVPN server. Vervolgens kan je vanaf buitenaf inloggen en ssh’en naar de andere virtuale servers en de Esxi zelf.
 
-Nginx -> https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts
+__Nginx__ -> https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-14-04-lts
 Maak in de Nginx een profiel aan voor je nieuwe NodeJS server. Doe dit met behulp van deze tutorial: http://www.nikola-breznjak.com/blog/javascript/nodejs/using-nginx-as-a-reverse-proxy-in-front-of-your-node-js-application/
 
 
@@ -152,25 +152,25 @@ Maak in de Nginx een profiel aan voor je nieuwe NodeJS server. Doe dit met behul
 
 In NodeJS worden een aantal termen gebruikt die belangrijk zijn om te begrijpen. Dit zijn NPM (Node package manager), NodeJS, app.js, modules, NPM scripts en package.json. Voordat je een Node project kan beginnen is het belangrijk om te begrijpen wat deze termen inhouden.
 
-NPM
+### NPM
 NPM is het “systeem” waarmee je losse modules kan inladen. Deze kan je zelf maken of vinden op npmjs.com.
 
-Package.json & .gitigone
+### Package.json & .gitigone
 Deze modules zet je vervolgens in je “package.json”. Naast de gebruikte module, zet je ook het versie nummer erbij. Al deze modules worden ingeladen in het mapje: “node modules”. Dit mapje zet je in de .gitignore zodat ze niet mee worden geüpload naar Github. Zodra jij of iemand anders het project wilt gebruiken kan je het project clonen of kopiëren (zonder de “node modules” map) en het commando “npm install” uitvoeren. Ook is het belangrijk dat je aangeeft welke NPM Modules worden gebruikt voor de applicatie, en welke voor de development omgeving. 
 
-Modules
+### Modules
 Deze modules kunnen echt van alles zijn. Van hele simpele functies (voor bijvoorbeeld een tijdelijke sessie aanmaken en dan verwijderen) tot complexe tijd calculatie functies (moment.js). Dit zijn modules die je gebruikt voor je applicatie. Er zijn ook modules die je kan gebruiken voor je development omgeving. Bijvoorbeeld nodemon, deze module herstart je applicatie na iedere wijziging zodat je niet continu je server opnieuw hoeft op te starten.
 
-NPM scripts
+### NPM scripts
 Met NPM scripts kan je meerdere commando’s laten uitvoeren met een soort van shortcuts die je van tevoren opgeeft. De NPM script definieer je in je package.json. Je kan met bijvoorbeeld een NPM script al je scss en javascript (es6) files laten watchen. Zodra je er eentje bewerkt en opslaat kan je ze automatisch laten compilen voor de uiteindelijke distributie.
 
-NodeJS
+### NodeJS
 NodeJS is de programmeertaal waarin je de applicatie maakt. Het hart van je applicatie leeft in app.js of index.js. Deze file kan je zelf noemen zoals je hem wilt. Je moet dit alleen wel aangeven in je package.json. In deze app.js start je de applicatie, verdeel je de routes en laad je alle modules in met de require functie. In de app.js begin je met het requiren van alle modules. Vervolgens schrijf je de code waarmee je een url request afvangt. Vervolgens start je de applicatie en laat je hem naar een port luisteren. Meestal doen mensen dit op poort 3000. Dit kan je veranderen naar alle anderen poorten die je wilt (zolang ze beschikbaar en vrij zijn). Wat een fijne combinatie is in Node is Express met Ejs (embedded javascript). Hiermee kan je twee belangrijke dingen doen. Je html pagina’s serveren aan de client, middleware toevoegen en makkelijk routes maken voor de url structuur van je applicatie.
 
-Middleware
+### Middleware
 Hiermee kan je voordat een functie die een url opvangt andere functies laten uitvoeren. Stel dat je een middleware functie schrijft die bekijkt of een gebruiker is ingelogd, als de gebruiker is ingelogd mag de gebruiker verder gaan. Als de gebruiker niet is ingelogd verwijs je de gebruiker door naar een login pagina met de melding dat je ingelogd moet zijn om de pagina te bekijken. Als je deze middleware functie voor iedere pagina zet waar je voor ingelogd moet zijn scheelt je dat een hoop onderhoud en het is ook DRY (don’t repeat yourself).
 
-EJS
+### EJS
 Embedded javascript is een view engine waarin je de HTML structuur maakt die naar de eindgebruiker gaat. Een alternatief hiervoor is bijvoorbeeld JADE of Handlebars. In de .ejs files kan je html, javascript, css en ejs typen. De ejs view engine maakt hier uiteindelijk html van en geeft dat door aan de client die de pagina opvraagt.
 
 <a name="article_3"></a>
@@ -220,6 +220,6 @@ Als je het hebt over performance, progressive enhancement, toegankelijkheid, too
 
 Met de komst van IoT wordt dit straks complexer. Onlinedata leeft straks niet alleen maar in onze computers, telefoons en smartwatches... Onlinedata leeft straks in onze koelkast, onze wekker, onze stofzuiger, onze auto en noem het maar op! Tegengaan kunnen we niet, en we moeten het ook zeker niet tegenhouden. Het is belangrijk dat wij ons er bewust van worden en veiligheden in bouwen om integriteit te waarborgen.
 
-Hoe ver moeten wij gaan?
+### Hoe ver moeten wij gaan?
 
 Ver. Als wij iets ethisch onverantwoord zouden moeten bouwen zouden we stop moeten zeggen en advies geven hoe het wel moet. Neem bijvoorbeeld een restaurant die graag hogere ratings wilt hebben en in het formulier standaard alle keuzes al invult op vier van de vijf sterren. Dan zouden wij stop moeten zeggen en uitleggen dat dit moet gaan over de kwaliteit van het eten en de service. Een voorbeeld over privacy: Als je op Bol.com een product bekijkt en vervolgens de website sluit, krijg je een paar dagen later een mail of je nog steeds geïnteresseerd bent in de bezochte producten. Dit onder het mom van: “Misschien ben je er nog wel in geïnteresseerd?” Het lijkt niet erg, maar waar trekken we de grens met hoever wij de gebruiker moeten volgens en data moeten verzamen om vervolgens verbanden mee te trekken?
