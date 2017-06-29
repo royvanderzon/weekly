@@ -1,3 +1,17 @@
+### Weekly
+- [02-07 Steven](#weekly_1)
+- [02-14 Justus](#weekly_2)
+- [02-28 Peter Paul Koch](#weekly_3)
+- [03-14 Titus Wormer](#weekly_4)
+- [03-28 Jasper](#weekly_5)
+- [04-14 Bram](#weekly_6)
+- [04-14 Peter Peerdeman](#weekly_7)
+- [04-28 Niels](#weekly_8)
+- [05-16 Nick de Bruijn](#weekly_9)
+- [05-23 Guido Bouman](#weekly_10)
+- [05-31 Leonie Watson](#weekly_11)
+
+### Artikelen
 - [Artikel 1](#article_1)
 - [Artikel 2](#article_2)
 - [Artikel 3](#article_3)
@@ -6,13 +20,16 @@
 
 # Weekly
 
+<a name="weekly_1"></a>
 ## 02-07 Steven -> Catawiki
 Steven Hay vertelde over het bedrijf Catawiki. Steven had meerdere bedrijven, hield van Lo Fi sketching, graphic design, design en usability.
 Hij is een enorme voorstander van de web richtlijnen die het makkelijker maken voor blinden en andere webgebruikers die met omwegen het web bezoeken.
 Ook is hij tegen het gebruik van dark patterns. Hij liet interessante voorbeelden zien hierover.
 
+<a name="weekly_2"></a>
 ## 02-14 Justus -> Docent HvA (gemist)
 
+<a name="weekly_3"></a>
 ## 02-28 -> Peter Paul Koch
 Peter Paul Koch is een interessante man die echt terug naar de basis van het web is gegaan. Alles moet werken op alle apparaten waar dan ook. Zo is hij dagelijks bezig met het testen van websites. Ook doet Peter een aantal bijzondere uitspraken (waar ik het grotendeels eens mee ben) waardoor veel ophef is ontstaan.
 1 – Websites worden te veel als native apps gemaakt
@@ -20,20 +37,24 @@ Peter Paul Koch is een interessante man die echt terug naar de basis van het web
 3 – Teveel libs/tools/frameworks
 4 - De website is geen platform
 
+<a name="weekly_4"></a>
 ## 03-14 Titus Wormer -> Docent HvA (over github)
 Het is belangrijk dat je altijd de eigenaar van gekopieerd werk crediteert (als je de code mag gebruiken). Ook heeft Titus een stukje geschiedenis laten zien van open source en over de bedenker van GitHub.
 Aan het eind van de Weekly Nerd heeft Titus een mini stukje live demo gegeven omdat er niet veel tijd meer over was.
 “Free, not as in free beer”
 
+<a name="weekly_5"></a>
 ## 03-28 Jasper (Voorhoede)
 Optimalisatie van websites. Laten zien hoeveel winst je kan maken met het optimaliseren van websites. Maar ook hoeveel meer conversie je kan halen. Dit is altijd een bijzonder goed werkend verkooppraatje voor nieuwe klanten.
 
 Ook vertelde Jasper over een nieuwe beweging waarin je makkelijker PwA’s kan maken. Dit doordat veel native functionaliteit van mobiele devices beschikbaar wordt gemaakt in de verschillende browsers.
 
+<a name="weekly_6"></a>
 ## 04-14 Bram -> Accessibility
 Bram is blind en nam daarom zijn hond mee naar de Weekly Nerd. Hij is in het eerste gedeelte van de Weekly Nerd door een aantal websites heen gegaan om te laten zien hoe dit nou precies in zijn werk ging. Ook kon hij er wel gevatte opmerkingen over maken. De HvA website zit bijvoorbeeld goed in elkaar maar toch zijn er een hoop dingen onduidelijk voor bijvoorbeeld slechtzienden.
 De kern van het verhaal is dat je altijd moet zorgen dat iedere website altijd goed te gebruiken is voor mensen die het web op een andere manier bezoeken.
 
+<a name="weekly_7"></a>
 ## 04-14 Peter Peerdeman -> Lifely
 Peter kende we al van Lifely. Hij liet startdashboard.nl zien, het is een applicatie in Meteor. Deze applicatie bevat een intranet met realtime features. Het wordt vanuit een eigen server gedraaid wat zorgt voor privacy. Het is niet ge-connect met facebook of Whatsapp.
 -	Distributed data protocol
@@ -42,9 +63,11 @@ Peter kende we al van Lifely. Hij liet startdashboard.nl zien, het is een applic
 -	Remote Procedure Calls
 -	Error
 
+<a name="weekly_8"></a>
 ## 04-28 Niels -> IoT specialist
 Niels is de oprichter van HTML5test.com en heeft ook meerdere projecten gestart zoals Solonhub. Niels is afkomstig uit Groningen! Niels heeft de techniek bedacht “klik aan klik uit”. Het is een simpele manier om IoT te developen door middel van een draggable interface. Ook maakt hij gebruik van Z-wave. Dat zorgt ervoor om een mash netwerk te creëren. (Wifi hotspot aanzicht)
 
+<a name="weekly_9"></a>
 ## 05-16 Nick de Bruijn -> CEO Lifely
 Nick is de CEO van Lifely. Hij is op zijn 12e begonnen met ondernemen. Hij begon met het verkopen van Pokemon kaarten online over de hele wereld! Nick vertelde dat de mainfocus van het bedrijf gaat naar de backend van het bedrijf. Hij is op dit moment bezig met veel verschillende projecten. Een ervan is die over de integratie van vluchtelingen in Nederland.
 -	Wees uniek
@@ -52,9 +75,11 @@ Nick is de CEO van Lifely. Hij is op zijn 12e begonnen met ondernemen. Hij begon
 -	Doe maar een ding tegelijk
 -	Je moet je producten kunnen verkopen
 
+<a name="weekly_10"></a>
 ## 05-23 Guido Bouman -> Q42
 Guido is een interaction engineer bij Q42. Q42 heeft vestigingen in Nederland en Amerika. Ze maken websites, webapplicaties, native apps en IoT. Dit doen ze in verschillende programmeertalen. Hij heeft verteld over hoe ze zijn koffie zet apparaat hebben aangeloten op het netwerk. Dit hebben ze doormiddel van een Raspberry pie! Ze konden uiteindelijk uitlezen wat de zero state was en wat er veranderd was. Zo konden ze zien wat voor verschillende koffie er gedronken wordt. Dit laten ze realtime zien op de website.
 
+<a name="weekly_11"></a>
 ## 05-31 Leonie Watson -> Accessibility developer (blind)
 Leonie wilde een aantal dingen vertellen over screen readers:
 -Voor wie screen readers zijn! (Bijvoorbeeld ook voor slecht ziende)
