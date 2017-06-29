@@ -1,6 +1,6 @@
 - [url](#article_1)
 - [Take me there](#article_1)
-- <a name="article_1"></a>Take me there
+- Take me there
 
 # Weekly
 
@@ -64,6 +64,7 @@ Leonie wilde een aantal dingen vertellen over screen readers:
 
 ## Hoe zet je een schaalbare proctieomgeving op voor NodeJS en MYSQL?
 [create an anchor](#article_1)
+<a name="article_1"></a>
 
 Hoe zet je een productie omgeving op die je echt kan gebruiken om je applicatie bezoekbaar te maken voor gebruikers? In dit artikel lees je over hoe je dit het beste kan opzetten. We gaan het voornamelijk hebben over NodeJS, Mysql, Nginx, security, OpenVPN, Ubuntu en Esxi.
 
