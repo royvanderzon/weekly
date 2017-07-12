@@ -196,19 +196,27 @@ Blijf consistent en houd een documentatie zodat andere mensen het ook kunnen ond
 Als laatste is het goed om je volledig op de gebruiker van het CMS te richten. Bekijk of je zoveel mogelijk wizards kan opdelen in kleine stukken of kan afvangen met logische flows. Houd de terminologie ook simpel en consistent. Let ook op de toegankelijkheid van het CMS. Is het toegankelijk voor slechtziende of bijvoorbeeld via mobiel?
 
 <a name="article_4"></a>
-## Accessibility
+## Hoe maak je een website toegankelijk
 
-Hoe maak je iets toegankelijk voor het web? Er zijn talloze voorbeelden van hoe het niet moet. Het is in ieder geval belangrijk om een goede html structuur te hebben. Zorg dat je valide html schrijft en gebruik maakt van de juiste html elementen. Voor toegankelijkheid het vooral belangrijk dat je html semantisch goed is opgebouwd. Het is dan ook handig om je html altijd even door een html validatie systeem heen te halen. Die van het W3C is goed aan te bevelen. https://validator.w3.org/
+Hoe maak je iets toegankelijk voor het web? Er zijn talloze voorbeelden van hoe het niet moet. Het is in ieder geval belangrijk om een goede html structuur te hebben. Zorg dat je valide html schrijft en gebruik maakt van de juiste html elementen. Voor toegankelijkheid het vooral belangrijk dat je html semantisch goed is opgebouwd. Het is dan ook handig om je html altijd even door een html validatie systeem heen te halen. Maar waarom zou je de html valideren? Volgens https://validator.w3.org/docs/why.html straat het professionaliteit uit, debug je de code, wordt het makkelijker te onderhouden.
 
-Geef consistente benamingen aan afbeeldingen en links. Blinden kunnen niet zien wat een afbeelding is of in wat voor context een link is geplaatst. Daarom is het belangrijk dat deze elementen goede beschrijvingen hebben. En bij een link waar ze heen verwijzen. Dit doe je met de “alt” tag. Mocht je een cms gebruiken waar je niet alles in vult, is het nog belangrijker om hier rekening mee te houden. Zo zou een alt tag bij een image verplicht moeten zijn zodat jou content creators hier geen fouten in kunnen maken. Dan dwingt het systeem af dat de uiteindelijke front-view de juiste informatie voor screenreaders bevat.
+### Voor wie?
+Internet moet voor iedereen toegankelijk zijn. Er zijn talloze online tutorials en studies over hoe je het web toegankelijker kan maken. Het is zelfs goed te doen voor mensen die alleen een cms beheren. Volgens Claire is er een hoop te doen. Zij schreef een tutorial voor Wordpress beheerders: https://premium.wpmudev.org/blog/making-wordpress-accessible.
 
+### Attributen
+Geef duidelijke benamingen aan de attributen afbeeldingen en links. Blinden kunnen niet zien wat een afbeelding is of in wat voor context een link is geplaatst. Daarom is het belangrijk dat deze elementen goede beschrijvingen hebben. En bij een link waar ze heen verwijzen. Dit doe je met de “alt” tag. Mocht je een cms gebruiken waar je niet alles in vult, is het nog belangrijker om hier rekening mee te houden. Zo zou een alt tag bij een image verplicht moeten zijn zodat de content creators hier geen fouten in kunnen maken. Dan dwingt het systeem af dat de uiteindelijke front-view de juiste informatie voor screenreaders bevat.
+
+### Contrast
 Zorg voor slechtziende dat het contrast goed is. Dit is niet alleen voor slechtziende, wat als iemand bijvoorbeeld op een telefoon kijkt in de zon? Dan is het belangrijk dat het contrast goed is. Er zijn programma’s waarmee je kan uittesten of het contrast ook echt daadwerkelijk goed is. Toch kunnen deze het ook mis hebben! Test het altijd zelf even door met je telefoon of laptop in de zon te gaan staan, of knijp je ogen dicht en kijk of je contrast ziet.
 
+### Touch devices
 Zorg dat knoppen goed groot zijn en goede states hebben. Vooral op mobiel is dit erg belangrijk. Ook is het goed om na te denken over waar knoppen komen op wat voor device. Als je bijvoorbeeld een touch table hebt waarbij de gebruiker aan de onderkant van het scherm staat, zou het vervelend zijn als de navigatieknoppen helemaal bovenaan de pagina staan. De states van de knoppen zijn ook erg belangrijk. Dit in combinatie met de affordance uiteraard. Is het klikbaar? Wat gaat er gebeuren als ik erop klik? Of geeft het systeem of website al een feedback over welke kant de pagina op gaat bewegen? Wat nog belangrijker is, is de focus state. Mensen die alleen met het toetenbord navigeren kunnen welke knop ze gaan gebruiken.
 
+### Fallbacks
 Zorg voor progressive enhancement. Javascript is erg krachtig, maar dat brengt ook zijn valkuilen mee. Als de verbinding slecht is, het device verouderd is, het device geen javascript kan uitvoeren of als javascript uit staat kan het zijn dat javascript niet goed functioneert. In dit geval is het belangrijk dat de fallbacks goed zijn. Als je met javascript een div klik baar maakt kan de gebruiker niks op het moment dat javascript niet goed werkt!
 
 Zorg dat je webpagina’s en ontwerpen toegankelijker worden voor het hele web door de hierboven genoemde onderdelen minimaal toe te passen in al je websites en apps!
+
 
 <a name="article_5"></a>
 ## Ethische data verzameling
