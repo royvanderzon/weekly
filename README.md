@@ -12,11 +12,11 @@
 - [05-31 Leonie Watson](#weekly_11)
 
 ### Artikelen
-- [Artikel 1](#article_1)
-- [Artikel 2](#article_2)
-- [Artikel 3](#article_3)
-- [Artikel 4](#article_4)
-- [Artikel 5](#article_5) (MUST READ!)
+- [Schaalbare productieomgeving](#article_1)
+- [Coding in NodeJS](#article_2)
+- [Waaraan te denken bij een CMS?](#article_3)
+- [Accessibility](#article_4)
+- [Ethische data verzameling](#article_5)
 
 # Weekly
 
