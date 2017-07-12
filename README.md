@@ -210,7 +210,7 @@ Als laatste is het goed om je volledig op de gebruiker van het CMS te richten. B
 
 Hoe maak je iets toegankelijk voor het web? Er zijn talloze voorbeelden van hoe het niet moet. Het is in ieder geval belangrijk om een goede html structuur te hebben. Zorg dat je valide html schrijft en gebruik maakt van de juiste html elementen. Voor toegankelijkheid het vooral belangrijk dat je html semantisch goed is opgebouwd. Het is dan ook handig om je html altijd even door een html validatie systeem heen te halen. Maar waarom zou je de html valideren? Volgens https://validator.w3.org/docs/why.html straat het professionaliteit uit, debug je de code, wordt het makkelijker te onderhouden.
 
-### Voor wie?
+### Voor wie? 
 Internet moet voor iedereen toegankelijk zijn. Er zijn talloze online tutorials en studies over hoe je het web toegankelijker kan maken. Het is zelfs goed te doen voor mensen die alleen een cms beheren. Volgens Claire is er een hoop te doen. Zij schreef een tutorial voor Wordpress beheerders: https://premium.wpmudev.org/blog/making-wordpress-accessible.
 
 ### Attributen
