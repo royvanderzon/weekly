@@ -22,7 +22,7 @@
 
 <a name="weekly_1"></a>
 ## 02-07 Steven -> Catawiki
-![weekly](http://www.widesi-webdesign.nl/1.jpg)
+![weekly](http://www.widesi-webdesign.nl/weekly/1.jpg)
 Steven Hay vertelde over het bedrijf Catawiki. Steven had meerdere bedrijven, hield van Lo Fi sketching, graphic design, design en usability.
 Hij is een enorme voorstander van de web richtlijnen die het makkelijker maken voor blinden en andere webgebruikers die met omwegen het web bezoeken.
 Ook is hij tegen het gebruik van dark patterns. Hij liet interessante voorbeelden zien hierover.
